@@ -47,6 +47,20 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
 
+        if(id == R.id.action_web_activity){
+            startActivity(new Intent(MainActivity.this, WebMainActivity.class));
+            return true;
+        }
+
+        if(id == R.id.action_share_text){
+            String teks = "coba teks";
+            Intent intent = new Intent();
+            intent.setAction(intent.ACTION_SEND);
+            intent.putExtra(Intent.EXTRA_TEXT, teks);
+            intent.setType("text/plain");
+            startActivity(intent);
+            return true;
+        }
         return super.onOptionsItemSelected(item);
     }
 }

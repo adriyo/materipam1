@@ -31,25 +31,27 @@ public class SignUpActivity extends ActionBarActivity {
         txtId = (EditText) findViewById(R.id.txtId);
         txtPass = (EditText) findViewById(R.id.txtPass);
 
-        AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
-        builder.setTitle("Warning").setMessage("Daftar sekarang? \n Nama:"+txtId.getText().toString()+"\n"+"Pass: "+txtPass.getText().toString())
-                .setPositiveButton("Daftar", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(SignUpActivity.this, "Daftar baru", Toast.LENGTH_SHORT).show();
-                    }
-                })
-                .setNegativeButton("Batal", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        Toast.makeText(SignUpActivity.this, "Batal Daftar", Toast.LENGTH_SHORT).show();
-                    }
-                });
-        final AlertDialog alertDialog = builder.create();
+        final AlertDialog.Builder builder = new AlertDialog.Builder(SignUpActivity.this);
 
         btnSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                String id = txtId.getText().toString();
+                String pass = txtPass.getText().toString();
+                builder.setTitle("Warning").setMessage("Daftar sekarang? \n ID:"+id+"\n"+"Pass: "+pass)
+                        .setPositiveButton("Daftar", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(SignUpActivity.this, "Daftar baru", Toast.LENGTH_SHORT).show();
+                            }
+                        })
+                        .setNegativeButton("Batal", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Toast.makeText(SignUpActivity.this, "Batal Daftar", Toast.LENGTH_SHORT).show();
+                            }
+                        });
+                AlertDialog alertDialog = builder.create();
                 alertDialog.show();
             }
         });

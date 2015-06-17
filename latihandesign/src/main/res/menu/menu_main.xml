@@ -10,4 +10,10 @@
         android:id="@+id/action_signup"
         android:title="Signup"
         app:showAsAction="never" />
+    <item
+        android:id="@+id/action_web_activity"
+        android:title="Webview" />
+    <item
+        android:id="@+id/action_share_text"
+        android:title="Share Teks" />
 </menu>
