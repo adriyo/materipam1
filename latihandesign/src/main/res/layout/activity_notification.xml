@@ -8,23 +8,20 @@
     tools:context="pertemuansatu.android.asdos.latihandesign.NotificationActivity">
 
     <Button
-        android:layout_gravity="right"
         android:id="@+id/start_note"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/start_note"
         />
     <Button
-        android:layout_gravity="right"
         android:id="@+id/cancel_note"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/cancel_note"
         />
     <Button
-        android:layout_gravity="right"
         android:id="@+id/update_note"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:text="@string/update_note"
         />

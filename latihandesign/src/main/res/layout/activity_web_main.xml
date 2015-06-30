@@ -7,6 +7,7 @@
     tools:context="pertemuansatu.android.asdos.latihandesign.WebMainActivity">
 
     <ImageView
+        android:clickable="true"
         android:src="@drawable/ic_launcher"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

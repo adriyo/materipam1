@@ -12,5 +12,8 @@
     <string name="cancel_note">Cancel Note</string>
     <string name="update_note">Update Note</string>
     <string name="title_activity_view_notification">ViewNotification</string>
+    <string name="title_activity_smsmain">SMSMainActivity</string>
+    <string name="title_activity_read_sms">ReadSMSActivity</string>
+    <string name="title_activity_write_sms">WriteSMSActivity</string>
 
 </resources>

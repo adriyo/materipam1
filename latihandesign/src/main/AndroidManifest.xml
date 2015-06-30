@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="pertemuansatu.android.asdos.latihandesign" >
 
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -39,6 +45,25 @@
         <activity
             android:name=".ViewNotification"
             android:label="@string/title_activity_view_notification" >
+        </activity>
+        <activity
+            android:name=".SMSMainActivity"
+            android:label="@string/title_activity_smsmain" >
+        </activity>
+        <activity
+            android:name=".ReadSMSActivity"
+            android:label="@string/title_activity_read_sms" >
+        </activity>
+
+        <receiver
+            android:name=".SMSBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+        </receiver>
+
+        <activity
+            android:name=".WriteSMSActivity"
+            android:label="@string/title_activity_write_sms" >
         </activity>
     </application>
 
