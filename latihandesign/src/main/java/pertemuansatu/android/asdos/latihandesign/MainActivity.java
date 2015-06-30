@@ -61,6 +61,10 @@ public class MainActivity extends ActionBarActivity {
             startActivity(intent);
             return true;
         }
+
+        if(id == R.id.action_notification){
+            startActivity(new Intent(MainActivity.this, NotificationActivity.class));
+        }
         return super.onOptionsItemSelected(item);
     }
 }
