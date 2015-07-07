@@ -15,5 +15,6 @@
     <string name="title_activity_smsmain">SMSMainActivity</string>
     <string name="title_activity_read_sms">ReadSMSActivity</string>
     <string name="title_activity_write_sms">WriteSMSActivity</string>
+    <string name="title_activity_crud">CRUDActivity</string>
 
 </resources>

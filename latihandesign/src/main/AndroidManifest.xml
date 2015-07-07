@@ -7,7 +7,8 @@
     <uses-permission android:name="android.permission.RECEIVE_SMS" />
     <uses-permission android:name="android.permission.READ_SMS" />
     <uses-permission android:name="android.permission.CALL_PHONE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
@@ -64,6 +65,10 @@
         <activity
             android:name=".WriteSMSActivity"
             android:label="@string/title_activity_write_sms" >
+        </activity>
+        <activity
+            android:name=".CRUDActivity"
+            android:label="@string/title_activity_crud" >
         </activity>
     </application>
 

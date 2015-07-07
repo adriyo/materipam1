@@ -83,6 +83,11 @@ public class MainActivity extends ActionBarActivity {
         if(id == R.id.action_sms){
             startActivity(new Intent(MainActivity.this, SMSMainActivity.class));
         }
+
+        if(id == R.id.action_sqlite){
+            startActivity(new Intent(MainActivity.this, CRUDActivity.class));
+        }
+
         return super.onOptionsItemSelected(item);
     }
 
