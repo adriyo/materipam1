@@ -70,6 +70,10 @@
             android:name=".CRUDActivity"
             android:label="@string/title_activity_crud" >
         </activity>
+        <activity
+            android:name=".XMLParseActivity"
+            android:label="@string/title_activity_xmlparse" >
+        </activity>
     </application>
 
 </manifest>

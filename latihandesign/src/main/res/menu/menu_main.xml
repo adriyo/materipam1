@@ -22,4 +22,6 @@
         android:title="SMS"/>
     <item android:id="@+id/action_sqlite"
         android:title="CRUD"/>
+    <item android:id="@+id/action_xmlparse"
+        android:title="XML Parse"/>
 </menu>

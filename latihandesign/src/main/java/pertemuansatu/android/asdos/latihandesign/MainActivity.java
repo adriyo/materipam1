@@ -61,12 +61,12 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
 
-        if(id == R.id.action_web_activity){
+        if (id == R.id.action_web_activity) {
             startActivity(new Intent(MainActivity.this, WebMainActivity.class));
             return true;
         }
 
-        if(id == R.id.action_share_text){
+        if (id == R.id.action_share_text) {
             String teks = "coba teks";
             Intent intent = new Intent();
             intent.setAction(intent.ACTION_SEND);
@@ -76,16 +76,19 @@ public class MainActivity extends ActionBarActivity {
             return true;
         }
 
-        if(id == R.id.action_notification){
+        if (id == R.id.action_notification) {
             startActivity(new Intent(MainActivity.this, NotificationActivity.class));
         }
 
-        if(id == R.id.action_sms){
+        if (id == R.id.action_sms) {
             startActivity(new Intent(MainActivity.this, SMSMainActivity.class));
         }
 
-        if(id == R.id.action_sqlite){
+        if (id == R.id.action_sqlite) {
             startActivity(new Intent(MainActivity.this, CRUDActivity.class));
+        }
+        if (id == R.id.action_xmlparse) {
+            startActivity(new Intent(MainActivity.this, XMLParseActivity.class));
         }
 
         return super.onOptionsItemSelected(item);
@@ -94,7 +97,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(resultCode == RESULT_OK){
+        if (resultCode == RESULT_OK) {
             Uri imageUri = data.getData();
             imgView.setImageURI(imageUri);
         }
