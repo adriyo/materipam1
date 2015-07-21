@@ -90,6 +90,9 @@ public class MainActivity extends ActionBarActivity {
         if (id == R.id.action_xmlparse) {
             startActivity(new Intent(MainActivity.this, XMLParseActivity.class));
         }
+        if (id == R.id.action_jsonparser) {
+            startActivity(new Intent(MainActivity.this, JSONParserActivity.class));
+        }
 
         return super.onOptionsItemSelected(item);
     }

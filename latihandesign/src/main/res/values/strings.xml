@@ -17,5 +17,6 @@
     <string name="title_activity_write_sms">WriteSMSActivity</string>
     <string name="title_activity_crud">CRUDActivity</string>
     <string name="title_activity_xmlparse">XMLParseActivity</string>
+    <string name="title_activity_jsonparser">JSONParserActivity</string>
 
 </resources>

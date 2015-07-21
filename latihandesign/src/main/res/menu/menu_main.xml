@@ -23,5 +23,7 @@
     <item android:id="@+id/action_sqlite"
         android:title="CRUD"/>
     <item android:id="@+id/action_xmlparse"
-        android:title="XML Parse"/>
+        android:title="XML Parser"/>
+    <item android:id="@+id/action_jsonparser"
+        android:title="JSON Parser"/>
 </menu>

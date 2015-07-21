@@ -9,14 +9,9 @@
     android:padding="0dp"
     tools:context="pertemuansatu.android.asdos.latihandesign.XMLParseActivity">
 
-    <include
-        android:id="@+id/app_bar"
-        layout="@layout/app_bar" />
-
     <TextView
         android:id="@+id/txt_view_xmlparse"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/app_bar" />
+        android:layout_height="wrap_content" />
 
 </RelativeLayout>
